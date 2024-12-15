@@ -17,14 +17,14 @@ Create project environment and install necessary packages using requirements.txt
 #### Set up the configuration file (config.ini)
 Make sure to set your dataset path in the config.ini file, and also check the file format for your EEG files (defaults to .edf) and placcement scheme (defaults to "standard_1020") matches the chosen formats in the configuration file. If your EEG files have another format than .edf you will have to implement the creation of the MNE raw objects in the cleanup_functions.py. Alto choose whether you would like the pipeline to interpolate bad channels and create cleaned .fif files. Other configurations can be set. 
 
-Dataset path (mandatory)
-File extension (optional, defaults to .edf)
-EEG placement scheme (optional, defaults to standard_1020)
-Reference channel (optional)
-Line frequency (optional, defaults to 50)
-Run ICA (optional, defaults to False)
-Interpolate bad channels (mandatory)
-Save EEG as fif (mandatory)
+* Dataset path (mandatory) <br>
+* File extension (optional, defaults to .edf) <br>
+* EEG placement scheme (optional, defaults to standard_1020) <br>
+* Reference channel (optional) <br>
+* Line frequency (optional, defaults to 50) <br>
+* Run ICA (optional, defaults to False) <br>
+* Interpolate bad channels (mandatory) <br>
+* Save EEG as fif (mandatory) <br>
 
 For more details on parameters see config.ini and project_report.pdf at the root directory of this repository.
 
