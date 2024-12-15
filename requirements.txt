@@ -1,0 +1,11 @@
+# Python version
+python==3.10.14
+
+# Required libraries
+pandas==2.2.3
+mne==1.8.0
+pyprep==0.4.3
+numpy==2.1.1
+matplotlib==3.9.2
+Markdown==3.7
+
