@@ -32,7 +32,7 @@ For more details on parameters see config.ini and project_report.pdf at the root
 To run the pipeline, execute the Main.py file either in the terminal or in an editor. 
 
 #### Output
-The pipeline created a colder at the root directory called "report". In this folder a folder for each participant is created along with subfolders for each session. In the session folder a report is generated showing relevant information and visualizations based on the given EEG data. A log file is also created to ease troubleshooting should you run into problems. If the option to save .fif file is enabled, a directory named "eeg" wil appear in each session folder with the cleaned EEG files. 
+The pipeline creates a folder at the root directory called "report". In this folder a folder for each participant is created along with subfolders for each session. In the session folder a report is generated showing relevant information and visualizations based on the given EEG data. A log file is also created to ease troubleshooting should you run into problems. If the option to save .fif file is enabled, a directory named "eeg" wil appear in each session folder with the cleaned EEG files. 
 
 ### Notes
 The pipeline at this stage does not apply lowpass or highpass filters, as it aims to preserve original data for emotion detection.
