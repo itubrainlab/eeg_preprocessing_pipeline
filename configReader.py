@@ -6,7 +6,7 @@ import configparser
 config = configparser.ConfigParser()
 
 # Read the configuration file
-config.read('config.ini')
+config.read('config.ini', encoding='utf-8')
 
 # Access values from the configuration file
 dataset_path = config.get('General', 'dataset_path')
@@ -51,23 +51,7 @@ channel_wise = config.get('Bads_by_ransac', 'channel_wise')
 
 
 
-    # Return a dictionary with the retrieved values
-    # config_values = {
-    #     'debug_mode': debug_mode,
-    #     'log_level': log_level,
-    #     'db_name': db_name,
-    #     'db_host': db_host,
-    #     'db_port': db_port
-    # }
-
-    # return config_values
-
-
-#if __name__ == &quot;__main__&quot;:
-    # Call the function to read the configuration file
-# config_data = read_config()
-
-    # Print the retrieved values
+# Print the retrieved values
 print("Dataset path: " + dataset_path)
 print("File extension: " + file_extension)
 print("Eeg placement scheme: " + eeg_placement_scheme)
